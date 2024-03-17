@@ -22,6 +22,22 @@
   button {
     @apply bg-slate-500 hover:bg-slate-600 text-zinc-50 px-4 py-2 rounded-md transition duration-150;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-950;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-400/40 rounded-lg transition duration-150;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400/80;
+  }
 }
 
 @layer utilities {
