@@ -1,48 +1,5 @@
 import { Link } from "react-router-dom";
-
-const animations = [
-  {
-    title: "GSAP To",
-    description:
-      "The to() method is used to animate a single element from a starting state to an ending state.",
-    path: "/gsapto",
-  },
-  {
-    title: "GSAP From",
-    description:
-      "The from() method is used to animate a single element from an ending state to a starting state.",
-    path: "/gsapfrom",
-  },
-  {
-    title: "GSAP FromTo",
-    description:
-      "The fromTo() method is used to animate a single element from a starting state to an ending state and vice versa.",
-    path: "/gsapfromto",
-  },
-  {
-    title: "GSAP Timeline",
-    description:
-      "The timeline() method is used to create a timeline to manage multiple animations.",
-    path: "/gsaptimeline",
-  },
-  {
-    title: "GSAP Stagger",
-    description:
-      "The stagger() method is used to animate multiple elements with a stagger effect.",
-    path: "/gsapstagger",
-  },
-  {
-    title: "GSAP ScrollTrigger",
-    description:
-      "The ScrollTrigger plugin is used to trigger animations based on the scroll position.",
-    path: "/gsapscrolltrigger",
-  },
-  {
-    title: "GSAP Text",
-    description: "Learn how to animate text with GSAP.",
-    path: "/gsaptext",
-  },
-];
+import { linkAnimations } from "../constant/link.constant";
 
 const Home = () => {
   return (
@@ -50,7 +7,7 @@ const Home = () => {
       <div className="flex flex-col">
         <h1 className="text-3xl font-bold text-zinc-50">GSAP Animations</h1>
         <ol className="flex flex-col mt-10">
-          {animations.map((animation, index) => (
+          {linkAnimations.map((animation, index) => (
             <Link
               to={animation.path}
               key={index}

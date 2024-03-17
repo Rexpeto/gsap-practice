@@ -4,7 +4,7 @@
 
 @layer components {
   code {
-    @apply font-mono text-sm bg-zinc-900 text-orange-400 p-1;
+    @apply font-mono text-sm bg-gray-950/40 text-orange-400 rounded-md p-1;
   }
 
   h1 {
@@ -12,7 +12,7 @@
   }
 
   main {
-    @apply mx-auto max-w-3xl ring-1 bg-zinc-900 ring-zinc-300/20 xl:max-w-5xl min-h-screen p-10;
+    @apply mx-auto max-w-3xl ring-1 bg-gray-900 ring-zinc-300/20 xl:max-w-5xl min-h-screen rounded-lg p-10;
   }
 
   a {
